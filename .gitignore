@@ -1,0 +1,18 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Datasets
+data/raw/
+data/merged/
+data/balanced/
+*.csv
+*.pcap
+*.zip
+
+
+# OS junk
+.DS_Store
+Thumbs.db
