@@ -12,7 +12,6 @@ data/balanced/
 *.pcap
 *.zip
 
-
 # OS junk
 .DS_Store
 Thumbs.db
