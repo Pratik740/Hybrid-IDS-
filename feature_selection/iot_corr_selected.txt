@@ -1,0 +1,30 @@
+0
+Unnamed: 0
+header_length
+protocol type
+time_to_live
+rate
+fin_flag_number
+syn_flag_number
+rst_flag_number
+psh_flag_number
+ack_flag_number
+ece_flag_number
+cwr_flag_number
+http
+https
+dns
+telnet
+smtp
+ssh
+irc
+dhcp
+arp
+icmp
+igmp
+tot sum
+min
+max
+iat
+number
+variance
