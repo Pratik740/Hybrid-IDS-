@@ -1,7 +1,5 @@
-0
-Unnamed: 0
 header_length
-protocol type
+protocol_type
 time_to_live
 rate
 fin_flag_number
