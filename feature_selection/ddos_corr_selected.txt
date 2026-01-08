@@ -16,7 +16,6 @@ bwd packet length mean
 flow bytes/s
 flow packets/s
 flow iat mean
-flow iat minq
 fwd iat min
 bwd iat total
 bwd iat mean

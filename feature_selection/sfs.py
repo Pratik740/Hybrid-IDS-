@@ -52,6 +52,8 @@ def run_sfs_xgboost(
 
     X = df[selected_features].select_dtypes(include=[np.number])  
     y = df["label"]
+    
+    print("Pre 1")
 
     print("Feature matrix:", X.shape)
     print("Label distribution:")
@@ -68,7 +70,7 @@ def run_sfs_xgboost(
             eval_metric="logloss",
             use_label_encoder=False,
             random_state=42,
-            n_jobs=1                # Set to 1 to avoid OS kill, my cpu was killing process :(
+            n_jobs=1                # Set to 1 to avoid OS kill, cpu was killing process :(
         ))
     ])
 
@@ -83,6 +85,7 @@ def run_sfs_xgboost(
         cv=cv,
         n_jobs=1                
     )
+    print("Started")
 
     sfs.fit(X, y)
     final_features = list(sfs.k_feature_names_)
@@ -101,12 +104,21 @@ def run_sfs_xgboost(
 #     dataset_name="iot",
 # )
 # Output:
-# Final 20 features were selected
+# Final 20 features were selected for iot2023
+
+
+# run_sfs_xgboost(
+#         csv_path="../data/balanced/iov2024.csv",
+#         feature_list_path="./iov_corr_selected.txt",
+#         dataset_name="iov",
+#     )
+# Output:
+# Final 7 features were selected for iov2024
 
 
 run_sfs_xgboost(
-        csv_path="../data/balanced/iov2024.csv",
-        feature_list_path="./iov_corr_selected.txt",
-        dataset_name="iov",
+        csv_path="../data/balanced/ddos2019.csv",
+        feature_list_path="./ddos_corr_selected.txt",
+        dataset_name="ddos",
     )
 
