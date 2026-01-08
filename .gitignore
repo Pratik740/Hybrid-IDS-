@@ -12,6 +12,12 @@ data/balanced/
 *.pcap
 *.zip
 
+# Trained models and artifacts
+models/
+*.h5
+*.pkl
+*.joblib
+
 # OS junk
 .DS_Store
 Thumbs.dbmodels/
